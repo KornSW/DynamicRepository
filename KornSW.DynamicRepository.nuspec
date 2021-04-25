@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>KornSW.DynamicRepository</id>
+    <version>0.1.0-localbuild</version>
+    <title>KornSW.DynamicRepository</title>
+    <authors>KornSW</authors>
+    <owners>KornSW</owners>
+    <copyright>KornSW</copyright>
+    <description>provides functionality to supply repositories on a generic way without writing too much redundant code</description>
+    <tags>EntityFramework Linq Repository</tags>
+    <!-- https://spdx.org/licenses/ -->
+    <license type="expression">GPL-3.0-only</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>PackageIcon.png</icon>
+    <projectUrl>https://github.com/KornSW/DynamicRepository</projectUrl>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="EntityAnnotations" version="[2.0.1,2.9999]" />
+      </group>
+      <group targetFramework="net5.0">
+        <dependency id="EntityAnnotations" version="[2.0.1,2.9999]" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package#from-a-convention-based-working-directory -->
+    <file src="PackageIcon.png" target="" />
+    <!-- .NET 4.6.1 -->
+    <file src="(Stage)\Bin\net46\KornSW.DynamicRepository.dll" target="lib/net46" />
+    <file src="(Stage)\Bin\net46\KornSW.DynamicRepository.xml" target="lib/net46" />
+    <file src="(Stage)\Bin\net46\KornSW.DynamicRepository.pdb" target="lib/net46" />
+    <!-- .NET 5.0 -->
+    <file src="(Stage)\Bin\net5.0\KornSW.DynamicRepository.dll" target="lib/net5.0" />
+    <file src="(Stage)\Bin\net5.0\KornSW.DynamicRepository.xml" target="lib/net5.0" />
+    <file src="(Stage)\Bin\net5.0\KornSW.DynamicRepository.pdb" target="lib/net5.0" />
+  </files>
+</package>

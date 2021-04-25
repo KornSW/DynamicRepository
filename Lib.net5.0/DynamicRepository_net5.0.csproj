@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>KornSW.DynamicRepository</AssemblyName>
+    <RootNamespace>System.Data</RootNamespace>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <PackageId>KornSW.DynamicRepository</PackageId>
+    <Description>provides functionality to supply repositories on a generic way without writing too much redundant code</Description>
+    <Product>KornSW.EntityFrameworkCore.DataAccessFilter</Product>
+    <Company>KornSW</Company>
+    <Copyright>KornSW</Copyright>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <Authors>KornSW</Authors>
+    <FileVersion>0.1.0.0</FileVersion>
+    <PackageTags>EntityFramework Linq Repository</PackageTags>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>..\(Stage)\Bin\net5.0\KornSW.DynamicRepository.xml</DocumentationFile>
+    <OutputPath>..\(Stage)\Bin\net5.0\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DefineConstants>TRACE;DEBUG;NET5</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\(Stage)\Bin\net5.0\</OutputPath>
+    <DocumentationFile>..\(Stage)\Bin\net5.0\KornSW.DynamicRepository.xml</DocumentationFile>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DefineConstants>TRACE;NET5</DefineConstants>
+  </PropertyGroup>
+
+  <Import Project="..\Lib.code\Lib.code.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <PackageReference Include="EntityAnnotations" Version="2.0.1-localbuild" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.9" />
+  </ItemGroup>
+
+</Project>
