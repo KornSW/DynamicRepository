@@ -17,9 +17,11 @@
     <dependencies>
       <group targetFramework=".NETFramework4.6">
         <dependency id="EntityAnnotations" version="[2.0.1,2.9999]" />
+        <dependency id="System.Linq.Dynamic.Core" version="[1.2.9,1.9999]" />
       </group>
       <group targetFramework="net5.0">
         <dependency id="EntityAnnotations" version="[2.0.1,2.9999]" />
+        <dependency id="System.Linq.Dynamic.Core" version="[1.2.9,1.9999]" />
       </group>
     </dependencies>
   </metadata>
