@@ -13,7 +13,7 @@
     <Product>KornSW.EntityFrameworkCore.DataAccessFilter</Product>
     <Company>KornSW</Company>
     <Copyright>KornSW</Copyright>
-    <Version>1.0.0</Version>
+    <Version>0.2.0</Version>
     <AssemblyVersion>0.1.0.0</AssemblyVersion>
     <Authors>KornSW</Authors>
     <FileVersion>0.1.0.0</FileVersion>
@@ -39,7 +39,7 @@
   <Import Project="..\Lib.code\Lib.code.projitems" Label="Shared" />
 
   <ItemGroup>
-    <PackageReference Include="EntityAnnotations" Version="2.0.1.387" />
+    <PackageReference Include="FUSE-fx.EntityAnnotations" Version="3.0.0" />
     <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.9" />
   </ItemGroup>
 

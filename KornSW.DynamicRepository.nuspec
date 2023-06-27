@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>KornSW.DynamicRepository</id>
-    <version>0.1.0-localbuild</version>
+    <version>0.2.0-localbuild</version>
     <title>KornSW.DynamicRepository</title>
     <authors>KornSW</authors>
     <owners>KornSW</owners>
@@ -16,11 +16,15 @@
     <projectUrl>https://github.com/KornSW/DynamicRepository</projectUrl>
     <dependencies>
       <group targetFramework=".NETFramework4.6">
-        <dependency id="EntityAnnotations" version="[2.0.1,2.9999]" />
+        <dependency id="FUSE-fx.EntityAnnotations" version="[3.0.0,3.9999]" />
         <dependency id="System.Linq.Dynamic.Core" version="[1.2.9,1.9999]" />
       </group>
       <group targetFramework="net5.0">
-        <dependency id="EntityAnnotations" version="[2.0.1,2.9999]" />
+        <dependency id="FUSE-fx.EntityAnnotations" version="[3.0.0,3.9999]" />
+        <dependency id="System.Linq.Dynamic.Core" version="[1.2.9,1.9999]" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="FUSE-fx.EntityAnnotations" version="[3.0.0,3.9999]" />
         <dependency id="System.Linq.Dynamic.Core" version="[1.2.9,1.9999]" />
       </group>
     </dependencies>
@@ -36,5 +40,9 @@
     <file src="(Stage)\Bin\net5.0\KornSW.DynamicRepository.dll" target="lib/net5.0" />
     <file src="(Stage)\Bin\net5.0\KornSW.DynamicRepository.xml" target="lib/net5.0" />
     <file src="(Stage)\Bin\net5.0\KornSW.DynamicRepository.pdb" target="lib/net5.0" />
+    <!-- .NET 6.0 -->
+    <file src="(Stage)\Bin\net6.0\KornSW.DynamicRepository.dll" target="lib/net6.0" />
+    <file src="(Stage)\Bin\net6.0\KornSW.DynamicRepository.xml" target="lib/net6.0" />
+    <file src="(Stage)\Bin\net6.0\KornSW.DynamicRepository.pdb" target="lib/net6.0" />  
   </files>
 </package>
